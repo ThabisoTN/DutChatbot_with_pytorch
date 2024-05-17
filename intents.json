@@ -1,0 +1,204 @@
+{
+  "intents": [
+      {
+          "tag": "greeting",
+          "patterns": ["Hi", "Hello", "Good day", "Hey", "Hi there"],
+          "responses": ["Hello! How can I assist you today?", "Hi there! What do you need help with?"]
+      },
+      {
+          "tag": "goodbye",
+          "patterns": ["Bye", "Goodbye", "See you later", "Talk to you later"],
+          "responses": ["Goodbye! Have a great day!", "See you later!"]
+      },
+      {
+          "tag": "thank_you",
+          "patterns": ["Thanks", "Thank you", "I appreciate it", "Thanks a lot"],
+          "responses": ["You're welcome!", "Happy to help!"]
+      },
+      {
+          "tag": "admission_requirements",
+          "patterns": ["What are the admission requirements?", "How do I apply?", "Admission criteria"],
+          "responses": ["You can find the admission requirements for each program on our official website under the 'Admissions' section."]
+      },
+      {
+          "tag": "application_deadlines",
+          "patterns": ["What are the application deadlines?", "When is the last date to apply?", "Application due dates"],
+          "responses": ["The application deadlines vary by program. Please check the official DUT website for specific dates."]
+      },
+      {
+          "tag": "application_process",
+          "patterns": ["How do I apply?", "What is the application process?", "Steps to apply"],
+          "responses": ["You can apply online through our website. Visit the 'Apply' section for detailed instructions on the application process."]
+      },
+      {
+          "tag": "admission_requirements_undergraduate",
+          "patterns": ["What are the admission requirements for undergraduate programs?", "Undergraduate admission criteria", "Requirements for bachelor's programs"],
+          "responses": ["Undergraduate admission requirements include a National Senior Certificate (NSC) or equivalent qualification, with a minimum of 50% in four subjects. Specific programs may have additional requirements. Please check the 'Admissions' section on our website for detailed information."]
+      },
+      {
+          "tag": "admission_requirements_postgraduate",
+          "patterns": ["What are the admission requirements for postgraduate programs?", "Postgraduate admission criteria", "Requirements for master's and PhD programs"],
+          "responses": ["Postgraduate admission requirements vary by program but generally include a relevant bachelor's degree. Some programs may require work experience or additional qualifications. Please refer to the 'Admissions' section on our website for specific details."]
+      },
+      {
+          "tag": "application_deadlines_undergraduate",
+          "patterns": ["What are the application deadlines for undergraduate programs?", "When is the last date to apply for undergraduate?", "Undergraduate application due dates"],
+          "responses": ["The application deadline for undergraduate programs is usually in September. Please check the 'Admissions' section on our website for the exact date."]
+      },
+      {
+          "tag": "application_deadlines_postgraduate",
+          "patterns": ["What are the application deadlines for postgraduate programs?", "When is the last date to apply for postgraduate?", "Postgraduate application due dates"],
+          "responses": ["Postgraduate application deadlines vary by program. Please check the 'Admissions' section on our website for the specific dates."]
+      },
+      {
+          "tag": "application_process_undergraduate",
+          "patterns": ["How do I apply for an undergraduate program?", "Undergraduate application process", "Steps to apply for bachelor's programs"],
+          "responses": ["You can apply online for undergraduate programs through the DUT website. Detailed instructions are available in the 'Apply' section. Make sure to submit all required documents before the deadline."]
+      },
+      {
+          "tag": "application_process_postgraduate",
+          "patterns": ["How do I apply for a postgraduate program?", "Postgraduate application process", "Steps to apply for master's and PhD programs"],
+          "responses": ["To apply for a postgraduate program, submit an online application through our website. You'll need to provide academic transcripts, a CV, and a research proposal if applicable. Detailed guidelines are available in the 'Apply' section on our website."]
+      },
+      {
+          "tag": "available_courses",
+          "patterns": ["What courses are offered?", "List of programs", "Courses available"],
+          "responses": ["DUT offers a variety of undergraduate and postgraduate programs. Please visit our 'Courses' section on the official website for more details."]
+      },
+      {
+          "tag": "course_details",
+          "patterns": ["Tell me about the Computer Science program", "Details about the Nursing program", "What is included in the Engineering course?"],
+          "responses": ["For detailed information about a specific course, please visit the 'Programs' section on our website or contact the respective department."]
+      },
+      {
+          "tag": "course_duration",
+          "patterns": ["How long is the Engineering program?", "Duration of the Business Administration course", "Length of the Nursing program"],
+          "responses": ["Course durations vary. Typically, undergraduate programs are 3-4 years, and postgraduate programs vary. Please check the specific program details on our website."]
+      },
+      {
+          "tag": "available_courses_undergraduate",
+          "patterns": ["What undergraduate courses are offered?", "List of bachelor's programs", "Undergraduate courses available"],
+          "responses": ["DUT offers a wide range of undergraduate programs including Engineering, Business Administration, Health Sciences, and more. Visit the 'Courses' section on our website for a complete list."]
+      },
+      {
+          "tag": "available_courses_postgraduate",
+          "patterns": ["What postgraduate courses are offered?", "List of master's and PhD programs", "Postgraduate courses available"],
+          "responses": ["Postgraduate programs at DUT include Master's and PhD programs in various fields such as Technology, Arts, and Health Sciences. For a complete list, please visit the 'Courses' section on our website."]
+      },
+      {
+          "tag": "course_details_computer_science",
+          "patterns": ["Tell me about the Computer Science program", "Details about the Computer Science course", "Computer Science program information"],
+          "responses": ["The Computer Science program at DUT covers topics such as programming, data structures, algorithms, and software engineering. For more detailed information, please visit the Computer Science program page on our website."]
+      },
+      {
+          "tag": "course_details_nursing",
+          "patterns": ["Tell me about the Nursing program", "Details about the Nursing course", "Nursing program information"],
+          "responses": ["The Nursing program at DUT includes theoretical and practical training in healthcare. It prepares students for careers in nursing and healthcare management. For more details, please visit the Nursing program page on our website."]
+      },
+      {
+          "tag": "course_duration_engineering",
+          "patterns": ["How long is the Engineering program?", "Duration of the Engineering course", "Length of the Engineering program"],
+          "responses": ["The Engineering program typically lasts 4 years for a bachelor's degree. Postgraduate durations vary. Please check the specific program details on our website."]
+      },
+      {
+        "tag": "course_duration_business_administration",
+        "patterns": ["How long is the Business Administration program?", "Duration of the Business Administration course", "Length of the Business Administration program"],
+        "responses": ["The Business Administration program typically takes 3 years to complete for an undergraduate degree. For more detailed information, please visit the Business Administration program page on our website."]
+    },
+    {
+        "tag": "tuition_fees",
+        "patterns": ["What are the tuition fees?", "Cost of studying", "Tuition fee details"],
+        "responses": ["Tuition fees vary by program. Detailed information can be found on the 'Fees' section of our website."]
+    },
+    {
+        "tag": "financial_aid",
+        "patterns": ["Is there financial aid available?", "Scholarships and bursaries", "Financial assistance"],
+        "responses": ["Yes, DUT offers various scholarships and bursaries. Please visit the 'Financial Aid' section on our website for more information."]
+    },
+    {
+        "tag": "tuition_fees_undergraduate",
+        "patterns": ["What are the tuition fees for undergraduate programs?", "Cost of undergraduate studies", "Undergraduate tuition fee details"],
+        "responses": ["Undergraduate tuition fees vary by program. Detailed fee information is available in the 'Fees' section on our website."]
+    },
+    {
+        "tag": "tuition_fees_postgraduate",
+        "patterns": ["What are the tuition fees for postgraduate programs?", "Cost of postgraduate studies", "Postgraduate tuition fee details"],
+        "responses": ["Postgraduate tuition fees depend on the specific program and level of study. Detailed information is available in the 'Fees' section on our website."]
+    },
+    {
+        "tag": "financial_aid_scholarships",
+        "patterns": ["Are there scholarships available?", "Scholarship options", "Financial aid through scholarships"],
+        "responses": ["Yes, DUT offers various scholarships for both undergraduate and postgraduate students. For more information, please visit the 'Financial Aid' section on our website."]
+    },
+    {
+        "tag": "financial_aid_bursaries",
+        "patterns": ["Are there bursaries available?", "Bursary options", "Financial aid through bursaries"],
+        "responses": ["DUT provides several bursary opportunities for students. Detailed information about eligibility and application procedures can be found in the 'Financial Aid' section on our website."]
+    },
+    {
+        "tag": "campus_facilities",
+        "patterns": ["What facilities are available on campus?", "Campus amenities", "Library and sports facilities"],
+        "responses": ["DUT has a range of facilities including libraries, sports centers, labs, and more. You can find a list of facilities on our 'Campus Life' section."]
+    },
+    {
+        "tag": "campus_locations",
+        "patterns": ["Where is the campus located?", "Campus addresses", "Location of DUT"],
+        "responses": ["DUT has multiple campuses located in Durban and Pietermaritzburg. Visit the 'Contact Us' section on our website for specific addresses."]
+    },
+    {
+        "tag": "accommodation",
+        "patterns": ["Is there student accommodation?", "Housing options", "Dormitories and residence halls"],
+        "responses": ["Yes, DUT provides student accommodation. For more details, visit the 'Accommodation' section on our website."]
+    },
+    {
+        "tag": "campus_facilities_libraries",
+        "patterns": ["What library facilities are available?", "Campus libraries", "Library resources"],
+        "responses": ["DUT has several libraries equipped with extensive resources, including books, journals, and electronic databases. Visit the 'Libraries' section on our website for more information."]
+    },
+    {
+        "tag": "campus_facilities_sports",
+        "patterns": ["What sports facilities are available?", "Campus sports centers", "Sports and recreation facilities"],
+        "responses": ["DUT offers various sports facilities including gyms, courts, and fields for different sports. For detailed information, visit the 'Sports and Recreation' section on our website."]
+    },
+    {
+        "tag": "campus_locations_durban",
+        "patterns": ["Where is the Durban campus located?", "Durban campus address", "Location of DUT Durban"],
+        "responses": ["The Durban campus is located at 41/43 M.L. Sultan Road, Durban. For a map and directions, please visit the 'Contact Us' section on our website."]
+    },
+    {
+        "tag": "campus_locations_pietermaritzburg",
+        "patterns": ["Where is the Pietermaritzburg campus located?", "Pietermaritzburg campus address", "Location of DUT Pietermaritzburg"],
+        "responses": ["The Pietermaritzburg campus is located at Indumiso Campus, 20 Golf Road, Pietermaritzburg. For more details, visit the 'Contact Us' section on our website."]
+    },
+    {
+        "tag": "accommodation_on_campus",
+        "patterns": ["Is there on-campus accommodation?", "On-campus housing options", "Dormitories and residence halls"],
+        "responses": ["Yes, DUT offers on-campus accommodation with various housing options. For more details, please visit the 'Accommodation' section on our website."]
+    },
+    {
+        "tag": "accommodation_off_campus",
+        "patterns": ["Are there off-campus accommodation options?", "Off-campus housing", "External student housing"],
+        "responses": ["There are several off-campus accommodation options available for DUT students. For recommendations and more information, please visit the 'Accommodation' section on our website."]
+    },
+    {
+        "tag": "student_support",
+        "patterns": ["What student support services are available?", "Counseling and support", "Academic assistance"],
+        "responses": ["DUT offers various student support services including counseling, academic support, and career services. More information can be found in the 'Student Services' section."]
+    },
+    {
+        "tag": "health_services",
+        "patterns": ["Are there health services on campus?", "Medical facilities", "Health center"],
+        "responses": ["Yes, there are health services available on campus. Please check the 'Health Services' section on our website for more details."]
+    },
+    {
+        "tag": "extracurricular_activities",
+        "patterns": ["What extracurricular activities are available?", "Clubs and societies", "Sports and recreation"],
+        "responses": ["DUT offers a variety of extracurricular activities including clubs, societies, and sports. Visit the 'Student Life' section for more information."]
+    },
+    {
+        "tag": "contact_details",
+        "patterns": ["How can I contact DUT?", "Contact information", "Phone number and email"],
+        "responses": ["You can contact DUT through phone, email, or by visiting our campuses. Detailed contact information is available in the 'Contact Us' section on our website."]
+    }
+  ]
+}
