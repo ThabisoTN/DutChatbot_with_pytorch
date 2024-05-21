@@ -26,5 +26,4 @@ def bag_Of_words(tokenized_sentense, all_words):
              bag[idx]=1.0
 
      return bag
-
-
+ 
