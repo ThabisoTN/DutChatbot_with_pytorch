@@ -93,40 +93,19 @@ if __name__ == "__main__":
             print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
 
     print(f'final loss: {loss.item():.4f}')
-     
-    
-'''dataset=DUTChatdataset()
-train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=2)
-device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model=NeuralNet(input_size, hidden_size, output_size).to(device)
+    data={
+        "model_state": model.state_dict(),
+        "input_size": input_size,
+        "output_size":output_size,
+        "hiddent_size": hidden_size,
+        "all_word": all_words,
+        "tags": tags
+    }
 
-#loss and optimizer
-criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-    
-# Train the model
-for epoch in range(num_epochs):
-    for (words, labels) in train_loader:
-        words = words.to(device)
-        labels = labels.to(dtype=torch.long).to(device)
-        
-        # Forward pass
-        outputs = model(words)
-        # if y would be one-hot, we must apply
-        # labels = torch.max(labels, 1)[1]
-        loss = criterion(outputs, labels)
-        
-        # Backward and optimize
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-        
-    if (epoch+1) % 100 == 0:
-        print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+    file="data.pth"
+    torch.save(data, file)
 
-
-print(f'final loss: {loss.item():.4f}')'''
-
+    print(f'training complete. file saved to {file}')
 
 
 
