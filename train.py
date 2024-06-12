@@ -106,8 +106,3 @@ if __name__ == "__main__":
     torch.save(data, file)
 
     print(f'training complete. file saved to {file}')
-
-
-
-
-   

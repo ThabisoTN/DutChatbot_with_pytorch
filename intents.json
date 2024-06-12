@@ -3,7 +3,7 @@
       {
           "tag": "greeting",
           "patterns": ["Hi", "Hello", "Good day", "Hey", "Hi there"],
-          "responses": ["Hello! How can I assist you today?", "Hi there! What do you need help with?"]
+          "responses": ["Hello! i am Thabiso a Dut chatbot, How can I assist you today?", "Hi there! i am Thabiso Dut chatbot, What do you need help with?"]
       },
       {
           "tag": "goodbye",
