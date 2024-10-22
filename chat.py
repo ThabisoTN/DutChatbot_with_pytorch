@@ -5,20 +5,18 @@ from model import NeuralNet
 from flask import Flask, render_template, request, jsonify
 from nltk_utils import bag_Of_words, tokenize
 
-# Flask app initialization
+
 app = Flask(__name__)
 
-# Device configuration (CUDA if available, otherwise CPU)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# Load the intents file and trained model
+
 with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 file = "data.pth"
 data = torch.load(file)
 
-# Load the required data from the file
 input_size = data["input_size"]
 hidden_size = data["hiddent_size"]  # Use the correct key from your working script
 output_size = data["output_size"]
@@ -26,14 +24,13 @@ all_words = data["all_word"]  # Use the correct key from your working script
 tags = data["tags"]
 model_state = data["model_state"]
 
-# Initialize the model
+
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Thabiso_Dut"
 
-# Serve the HTML web page
 @app.route("/")
 def index():
     return render_template("index.html")

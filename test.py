@@ -4,5 +4,4 @@ def test(i, j):
     else:
         return i + test(i - 1, j)
 
-# Call the function and print the result
 print(test(4, 7))

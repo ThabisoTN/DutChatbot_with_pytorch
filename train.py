@@ -49,7 +49,7 @@ class DUTChatdataset(Dataset):
         self.n_sample=len(X_train)
         self.x_data=X_train
         self.y_data=Y_train
-   # dataset[idx]
+        
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
     
