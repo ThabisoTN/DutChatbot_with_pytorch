@@ -2,49 +2,66 @@ import random
 import json
 import torch
 from model import NeuralNet
-from nltk_utils import bag_Of_words, tokenize, stem
+from flask import Flask, render_template, request, jsonify
+from nltk_utils import bag_Of_words, tokenize
 
+# Flask app initialization
+app = Flask(__name__)
+
+# Device configuration (CUDA if available, otherwise CPU)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+# Load the intents file and trained model
 with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 file = "data.pth"
 data = torch.load(file)
 
+# Load the required data from the file
 input_size = data["input_size"]
-hidden_size = data["hiddent_size"]  
+hidden_size = data["hiddent_size"]  # Use the correct key from your working script
 output_size = data["output_size"]
-all_words = data["all_word"]
+all_words = data["all_word"]  # Use the correct key from your working script
 tags = data["tags"]
 model_state = data["model_state"]
 
+# Initialize the model
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name="Thabiso_Dut"
-print("Let's chat! type 'quit to exit")
-while True:
-    sentence = input("You: ")
-    if sentence=="quit":
-        break
+bot_name = "Thabiso_Dut"
 
-    sentence = tokenize(sentence)
-    x=bag_Of_words(sentence,all_words )
-    x=x.reshape(1,x.shape[0])
-    x=torch.from_numpy(x)
+# Serve the HTML web page
+@app.route("/")
+def index():
+    return render_template("index.html")
 
-    output=model(x)
-    _,predicted=torch.max(output,dim=1)
-    tag=tags[predicted.item()]
+# Process user message and return chatbot response
+@app.route("/get-response", methods=["POST"])
+def get_response():
+    user_input = request.json.get("message")
     
-    probs=torch.softmax(output,dim=1)
-    prob=probs[0][predicted.item()]
+    sentence = tokenize(user_input)
+    x = bag_Of_words(sentence, all_words)
+    x = x.reshape(1, x.shape[0])
+    x = torch.from_numpy(x).to(device)
 
-    if prob.item()>0.75:
+    output = model(x)
+    _, predicted = torch.max(output, dim=1)
+    tag = tags[predicted.item()]
+
+    probs = torch.softmax(output, dim=1)
+    prob = probs[0][predicted.item()]
+
+    if prob.item() > 0.75:
         for intent in intents["intents"]:
-         if tag==intent["tag"]:
-             print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-        print(f"{bot_name}: I did not understand that, try again")
+            if tag == intent["tag"]:
+                return jsonify({"response": random.choice(intent['responses'])})
+    return jsonify({"response": "I did not understand that, try again."})
+
+# If running directly, use Flask for the web interface
+if __name__ == "__main__":
+    print("Starting web server...")
+    app.run(debug=True)
