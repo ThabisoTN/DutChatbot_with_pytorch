@@ -18,9 +18,9 @@ file = "data.pth"
 data = torch.load(file)
 
 input_size = data["input_size"]
-hidden_size = data["hiddent_size"]  # Use the correct key from your working script
+hidden_size = data["hiddent_size"]  
 output_size = data["output_size"]
-all_words = data["all_word"]  # Use the correct key from your working script
+all_words = data["all_word"]  
 tags = data["tags"]
 model_state = data["model_state"]
 
