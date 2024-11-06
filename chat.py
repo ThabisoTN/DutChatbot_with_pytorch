@@ -56,7 +56,7 @@ def get_response():
         for intent in intents["intents"]:
             if tag == intent["tag"]:
                 return jsonify({"response": random.choice(intent['responses'])})
-    return jsonify({"response": "I did not understand that, try again."})
+    return jsonify({"response": "Am not trained to talk about that and am only trained to talked about DUT related information!!!."})
 
 # If running directly, use Flask for the web interface
 if __name__ == "__main__":

@@ -1,0 +1,8 @@
+version: 1
+services:
+  - type: web
+    name: ThabisoChatBot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: sh start.sh
+    autoDeploy: true
