@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thabiso_Dut Chatbot</title>
+    <title>ChatbotThabiso</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,11 +83,14 @@
 </head>
 <body>
 
-<div class="chat-container">
-    <div class="chat-box" id="chat-box"></div>
-    <input type="text" id="user-input" placeholder="Type your message here..." />
-    <button onclick="sendMessage()">Send</button>
-</div>
+    <div class="chat-container">
+        <div class="intro">
+            <p>Welcome to the Thabiso ChatBot! Ask me anything about Thabiso Ngubane, including his education, projects, and skills!</p>
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message here..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
 
 <script>
     function sendMessage() {
