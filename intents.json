@@ -3,7 +3,7 @@
     {
       "tag": "greeting",
       "patterns": ["Hi", "Hello", "Good day", "Hey", "Hi there"],
-      "responses": ["Hello! I am Thabiso, a software developer. How can I assist you today?"]
+      "responses": ["Hello! I am ChatBotThabiso to assist you with every thing you need to know about Thabiso. How can I assist you today?"]
     },
     {
       "tag": "goodbye",
@@ -54,6 +54,56 @@
       "tag": "learning_resources",
       "patterns": ["What resources do you recommend for learning programming?", "Any books or websites for software development?"],
       "responses": ["I recommend platforms like Codecademy, Coursera, and books such as 'Clean Code' by Robert C. Martin for software development. Regularly attending tech talks can also be beneficial."]
+    },
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Good day", "Hey", "Hi there"],
+      "responses": ["Hello! I am Thabiso Ngubane, a software developer. How can I assist you today?"]
+    },
+    {
+      "tag": "work_experience",
+      "patterns": ["What is your work experience?", "Tell me about your work history", "What jobs have you had?"],
+      "responses": ["I have worked as a software developer, focusing on projects such as a lecturer consultation booking system and a career guidance chatbot. I have experience with frameworks like .NET, Flask, and various AI technologies."]
+    },
+    {
+      "tag": "skills",
+      "patterns": ["What skills do you have?", "What are your technical skills?", "Tell me about your skills"],
+      "responses": ["I am skilled in programming languages such as C#, Python, and JavaScript. I have experience with frameworks like ASP.NET, Flask, and Django, along with proficiency in SQL databases and AI technologies."]
+    },
+    {
+      "tag": "education",
+      "patterns": ["What is your educational background?", "Tell me about your education", "What degrees do you have?"],
+      "responses": ["I hold a Diploma in ICT: Application Development and an Advanced Diploma in ICT, providing me with a strong foundation in software development and technology."]
+    },
+    {
+      "tag": "summary",
+      "patterns": ["Tell me about yourself", "What is your professional summary?", "Give me a brief introduction"],
+      "responses": ["I am a passionate software developer with a focus on building efficient and user-friendly applications. I strive to leverage technology to solve real-world problems and enhance user experiences."]
+    },
+    {
+      "tag": "projects",
+      "patterns": ["What projects have you worked on?", "Tell me about your projects", "What are your notable projects?"],
+      "responses": ["Some of my notable projects include a lecturer consultation booking system, a career guidance chatbot, and various applications using .NET and Flask frameworks."]
+    },
+    {
+      "tag": "chatbot_info",
+      "patterns": ["Tell me about your chatbot", "What does your chatbot do?", "Describe your chatbot project"],
+      "responses": ["I developed a chatbot using AI technologies to assist users with academic queries and provide guidance related to career choices and university applications."]
+    },
+    {
+      "tag": "frameworks",
+      "patterns": ["What frameworks do you use?", "Tell me about your experience with frameworks", "Which frameworks are you familiar with?"],
+      "responses": ["I am familiar with frameworks like ASP.NET, Flask, and Django. I have experience in building applications using these frameworks and implementing best practices."]
+    },
+    {
+      "tag": "career_guidance",
+      "patterns": ["What career guidance do you offer?", "How can you help with career choices?", "Tell me about your career guidance services"],
+      "responses": ["I provide career guidance through various platforms, helping individuals explore career options and educational pathways that align with their interests and skills."]
+    },
+    {
+      "tag": "lecturer_consultation",
+      "patterns": ["How do I book a consultation with a lecturer?", "Tell me about your lecturer consultation system", "What is the process for lecturer booking?"],
+      "responses": ["I have developed a lecturer consultation booking system that allows students to easily schedule appointments with their lecturers. For more details, please visit our booking page."]
     }
   ]
 }
