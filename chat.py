@@ -4,8 +4,6 @@ import torch
 from model import NeuralNet
 from flask import Flask, render_template, request, jsonify
 from nltk_utils import bag_Of_words, tokenize
-import nltk
-nltk.data.path.append('./nltk_data')  # Adjust the path if necessary
 
 
 app = Flask(__name__)
@@ -20,9 +18,9 @@ file = "data.pth"
 data = torch.load(file)
 
 input_size = data["input_size"]
-hidden_size = data["hiddent_size"]  
+hidden_size = data["hiddent_size"]  # Use the correct key from your working script
 output_size = data["output_size"]
-all_words = data["all_word"]  
+all_words = data["all_word"]  # Use the correct key from your working script
 tags = data["tags"]
 model_state = data["model_state"]
 
@@ -58,7 +56,7 @@ def get_response():
         for intent in intents["intents"]:
             if tag == intent["tag"]:
                 return jsonify({"response": random.choice(intent['responses'])})
-    return jsonify({"response": "Am not trained to talk about that and am only trained to talked about DUT related information!!!."})
+    return jsonify({"response": "I did not understand that, try again."})
 
 # If running directly, use Flask for the web interface
 if __name__ == "__main__":

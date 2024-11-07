@@ -1,6 +1,11 @@
 import nltk #nanural language toolkit
 from nltk.stem.porter import PorterStemmer
 import numpy as np
+
+import nltk
+nltk.data.path.append('nltk_data')
+
+
 stemmer=PorterStemmer()
 #Tokenization is a process in natural language processing (NLP) and text processing that involves splitting text into individual units called tokens. These tokens can be words, phrases, symbols, or other meaningful elements. Tokenization is a crucial step in preparing text data for further analysis, such as in machine learning, text mining, and information retrieval.
 def tokenize(sentense):
