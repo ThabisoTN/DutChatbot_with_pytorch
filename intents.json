@@ -2,108 +2,193 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Good day", "Hey", "Hi there"],
-      "responses": ["Hello! I am ChatBotThabiso to assist you with every thing you need to know about Thabiso. How can I assist you today?"]
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Good day",
+        "Hey",
+        "Hi there",
+        "What's up?",
+        "How are you?",
+        "Is anyone there?",
+        "Greetings",
+        "Howdy"
+      ],
+      "responses": [
+        "Hello! I am ChatBotThabiso, here to assist you with everything you need to know about Thabiso. How can I assist you today?",
+        "Hi there! I'm ChatBotThabiso. Feel free to ask me anything about Thabiso!",
+        "Good day! I'm here to help you learn more about Thabiso. What would you like to know?",
+        "Hey! I'm ChatBotThabiso, ready to provide information about Thabiso. What can I help you with today?"
+      ]
     },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "Goodbye", "See you later", "Talk to you later"],
-      "responses": ["Goodbye! Have a great day!", "See you later!"]
-    },
-    {
-      "tag": "thank_you",
-      "patterns": ["Thanks", "Thank you", "I appreciate it", "Thanks a lot"],
-      "responses": ["You're welcome! I'm here to help."]
-    },
-    {
-      "tag": "admission_requirements",
-      "patterns": ["What are the admission requirements?", "Requirements for software development programs"],
-      "responses": ["Admission requirements vary by program. Generally, a strong background in programming and relevant projects are beneficial."]
-    },
-    {
-      "tag": "application_process",
-      "patterns": ["How do I apply for software development courses?", "What is the application process?"],
-      "responses": ["You can apply online through the university's website. Ensure to highlight your programming skills and projects."]
-    },
-    {
-      "tag": "program_information",
-      "patterns": ["What programs do you recommend for software development?", "List of programming courses"],
-      "responses": ["I recommend programs focusing on C#, Python, and web development. Look for those that offer hands-on projects."]
-    },
-    {
-      "tag": "projects",
-      "patterns": ["Tell me about your projects", "What projects have you worked on?", "Share your development experiences"],
-      "responses": ["I've developed several applications including a Student Application Guidance System using ASP.NET Core and a chatbot with PyTorch. You can view them on my GitHub profile."]
-    },
-    {
-      "tag": "technology_stack",
-      "patterns": ["What technologies do you use?", "Tell me about your tech stack"],
-      "responses": ["I primarily use C#, Python, ASP.NET Core, Flask, and various SQL databases. I also integrate AI using OpenAI's APIs."]
-    },
-    {
-      "tag": "career_guidance",
-      "patterns": ["Can you give me career advice?", "How do I start a career in software development?", "What skills do I need for a software career?"],
-      "responses": ["To start a career in software development, focus on learning programming languages like C# and Python, and work on projects. Networking and continuous learning are also key."]
-    },
-    {
-      "tag": "contact_details",
-      "patterns": ["How can I contact you?", "What are your contact details?"],
-      "responses": ["You can reach me via my email at thabisongubanee@gmail.com or visit my GitHub profile at https://github.com/ThabisoTN."]
-    },
-    {
-      "tag": "learning_resources",
-      "patterns": ["What resources do you recommend for learning programming?", "Any books or websites for software development?"],
-      "responses": ["I recommend platforms like Codecademy, Coursera, and books such as 'Clean Code' by Robert C. Martin for software development. Regularly attending tech talks can also be beneficial."]
-    },
-    {
-      "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Good day", "Hey", "Hi there"],
-      "responses": ["Hello! I am Thabiso Ngubane, a software developer. How can I assist you today?"]
-    },
-    {
-      "tag": "work_experience",
-      "patterns": ["What is your work experience?", "Tell me about your work history", "What jobs have you had?"],
-      "responses": ["I have worked as a software developer, focusing on projects such as a lecturer consultation booking system and a career guidance chatbot. I have experience with frameworks like .NET, Flask, and various AI technologies."]
-    },
-    {
-      "tag": "skills",
-      "patterns": ["What skills do you have?", "What are your technical skills?", "Tell me about your skills"],
-      "responses": ["I am skilled in programming languages such as C#, Python, and JavaScript. I have experience with frameworks like ASP.NET, Flask, and Django, along with proficiency in SQL databases and AI technologies."]
-    },
-    {
-      "tag": "education",
-      "patterns": ["What is your educational background?", "Tell me about your education", "What degrees do you have?"],
-      "responses": ["I hold a Diploma in ICT: Application Development and an Advanced Diploma in ICT, providing me with a strong foundation in software development and technology."]
-    },
+
     {
       "tag": "summary",
-      "patterns": ["Tell me about yourself", "What is your professional summary?", "Give me a brief introduction"],
-      "responses": ["I am a passionate software developer with a focus on building efficient and user-friendly applications. I strive to leverage technology to solve real-world problems and enhance user experiences."]
+      "patterns": [
+        "Tell me about Thabiso",
+        "What is Thabiso's background?",
+        "Can you provide a summary of Thabiso?",
+        "Give me an overview of Thabiso",
+        "Who is Thabiso?",
+        "What does Thabiso do?",
+        "Describe Thabiso",
+        "What are Thabiso's qualifications?",
+        "Tell me Thabiso's story",
+        "What is Thabiso known for?"
+      ],
+      "responses": [
+        "Thabiso Ngubane is a passionate software developer with experience in C# and Python, skilled in building applications using ASP.NET Core, Flask, and various SQL databases. Thabiso holds an Advanced Diploma in ICT: Application Development and has worked on several notable projects, including a Career Guidance Application and a DUT Lecturer Consultation Booking system.",
+        "Thabiso is a software developer with a strong foundation in programming languages such as C# and Python. He has developed applications that assist users with various academic and career-related queries, showcasing his dedication to leveraging technology for problem-solving.",
+        "As a software developer, Thabiso focuses on creating user-friendly applications. With experience in ASP.NET Core and Flask, he is well-versed in full-stack development and integrates AI technologies to enhance user interactions.",
+        "Thabiso is known for his innovative projects, including the School Student Tracking System and the Lawn Mowing Booking System. He is committed to continuous learning and improving his skills in software development."
+      ]
+    }, 
+    {
+      "tag": "personal_information",
+      "patterns": [
+        "What is Thabiso's GitHub account?",
+        "Where can I find Thabiso's GitHub profile?",
+        "What is Thabiso's LinkedIn profile?",
+        "Can you provide Thabiso's personal website?",
+        "Where is Thabiso's professional website located?",
+        "What are Thabiso's social media links?",
+        "How can I contact Thabiso?",
+        "Does Thabiso have a website?",
+        "What is Thabiso's email address?",
+        "Where can I find Thabiso online?"
+      ],
+      "responses": [
+        "Thabiso's GitHub profile can be found at [https://github.com/ThabisoTN](https://github.com/ThabisoTN).",
+        "You can connect with Thabiso on LinkedIn: [https://www.linkedin.com/in/thabiso-ngubane-164301286](https://www.linkedin.com/in/thabiso-ngubane-164301286).",
+        "Thabiso's personal website is located at [https://thabisongubanee.onrender.com/](https://thabisongubanee.onrender.com/).",
+        "For any inquiries, you can contact Thabiso via email at thabisongubanee@gmail.com. or call on 076 818 3306",
+        "Thabiso is active on GitHub and LinkedIn, where you can follow his projects and professional journey."
+      ]
+    }, {
+      "tag": "education_background",
+      "patterns": [
+        "What is Thabiso's educational background?",
+        "Where did Thabiso study?",
+        "What degrees does Thabiso have?",
+        "Can you tell me about Thabiso's education?",
+        "What qualifications does Thabiso hold?",
+        "Where did Thabiso get his diploma?",
+        "What subjects did Thabiso study in college?",
+        "Tell me about Thabiso's academic achievements."
+      ],
+      "responses": [
+        "Thabiso holds an Advanced Diploma in ICT: Application Development and a Diploma in Application Development from Durban University of Technology.",
+        "Thabiso studied at Durban University of Technology, where he earned an Advanced Diploma in ICT: Application Development and a Diploma in Application Development.",
+        "Thabiso's educational background includes an Advanced Diploma in ICT and a Diploma in Application Development, focusing on programming languages and software development."
+      ]
+    }, 
+
+    {
+      "tag": "skills",
+      "patterns": [
+        "What skills does Thabiso have?",
+        "Tell me about Thabiso's skills.",
+        "What are Thabiso's technical skills?",
+        "Can you list Thabiso's skills?",
+        "What programming languages does Thabiso know?",
+        "What technologies is Thabiso proficient in?",
+        "Describe Thabiso's skill set."
+      ],
+      "responses": [
+        "Thabiso is skilled in the following areas: \n- Programming languages: C#, Python, and JavaScript \n- Frameworks: ASP.NET Core, MVC, Flask, and Django \n- Database management: SQL and SQLAlchemy \n- AI technologies: Experience with integrating AI using OpenAI's APIs \n- Web development: Proficient in HTML and CSS \n- DevOps: Experience with Git and GitHub for version control.",
+        "Thabiso's skill set includes:\n- C# and Python programming \n- ASP.NET Core and Flask frameworks \n- SQL databases for data management \n- HTML, CSS, and JavaScript for front-end development \n- Familiarity with AI technologies and tools like OpenAI.",
+        "Thabiso is proficient in:\n- C# and Python for backend development \n- ASP.NET Core, MVC, and Flask for building web applications \n- SQL for database management and integration \n- HTML, CSS, and JavaScript for web design and interactivity."
+      ]
     },
     {
       "tag": "projects",
-      "patterns": ["What projects have you worked on?", "Tell me about your projects", "What are your notable projects?"],
-      "responses": ["Some of my notable projects include a lecturer consultation booking system, a career guidance chatbot, and various applications using .NET and Flask frameworks."]
+      "patterns": [
+        "What projects has Thabiso worked on?",
+        "Tell me about Thabiso's projects.",
+        "What are Thabiso's notable projects?",
+        "Can you list Thabiso's projects?",
+        "What applications has Thabiso developed?",
+        "Describe the projects Thabiso has completed.",
+        "What is Thabiso's project experience?"
+      ],
+      "responses": [
+        "Thabiso has worked on several projects, including:\n1. **Career Guidance Application** - Helps high school students navigate potential career paths based on their subjects and interests.\n2. **DUT Lecturer Consultation Booking** - Allows students to book consultations with lecturers based on their availability.\n3. **School Student Tracking System** - Enables schools to register students and track attendance using QR codes.\n4. **Lawn Mowing Booking System** - Allows community members to schedule lawn mowing services.\n5. **ChatBot** - Developed to assist users with academic queries related to DUT.",
+        "Thabiso's notable projects include:\n- **Career Guidance Application**: Designed for high school students to explore career options.\n- **DUT Lecturer Consultation Booking**: Streamlines the appointment process for students and lecturers.\n- **School Student Tracking System**: Tracks student attendance with QR code identification.\n- **Lawn Mowing Booking System**: Provides scheduling for lawn mowing services.\n- **ChatBot**: Aids users with academic questions related to DUT.",
+        "Some projects Thabiso has developed are:\n1. **Career Guidance Application**\n2. **DUT Lecturer Consultation Booking**\n3. **School Student Tracking System**\n4. **Lawn Mowing Booking System**\n5. **ChatBot**\nYou can ask for more details about any specific project."
+      ]
     },
     {
-      "tag": "chatbot_info",
-      "patterns": ["Tell me about your chatbot", "What does your chatbot do?", "Describe your chatbot project"],
-      "responses": ["I developed a chatbot using AI technologies to assist users with academic queries and provide guidance related to career choices and university applications."]
+      "tag": "extracurricular_activities",
+      "patterns": [
+        "What extracurricular activities is Thabiso involved in?",
+        "Tell me about Thabiso's extracurricular activities.",
+        "What clubs or societies does Thabiso participate in?",
+        "Can you list Thabiso's extracurricular activities?",
+        "What activities does Thabiso do outside of academics?",
+        "Describe Thabiso's involvement in extracurricular activities."
+      ],
+      "responses": [
+        "Thabiso is actively involved in various extracurricular activities, including participating in tech clubs, attending workshops and seminars related to software development, and engaging in community service projects.",
+        "Thabiso participates in several extracurricular activities such as coding competitions, hackathons, and volunteering at local community events to promote technology education.",
+        "Some of Thabiso's extracurricular activities include:\n- Involvement in the university's tech society.\n- Participation in hackathons and coding challenges.\n- Volunteering for community service projects focused on technology education."
+      ]
+    }, 
+    {
+      "tag": "work_experience_lead_hr",
+      "patterns": [
+        "What is Thabiso's work experience at Lead HR?",
+        "Tell me about Thabiso's role at Lead HR.",
+        "What did Thabiso do at Lead HR?",
+        "Can you describe Thabiso's experience at Lead HR?",
+        "What responsibilities did Thabiso have at Lead HR?"
+      ],
+      "responses": [
+        "At Lead HR, Thabiso worked as a Software Developer Intern, focusing on developing and maintaining web applications. This role involved collaborating with cross-functional teams to gather requirements, implement features, and ensure the software met user needs. Thabiso also gained experience in Agile methodologies and participated in code reviews."
+      ]
     },
     {
-      "tag": "frameworks",
-      "patterns": ["What frameworks do you use?", "Tell me about your experience with frameworks", "Which frameworks are you familiar with?"],
-      "responses": ["I am familiar with frameworks like ASP.NET, Flask, and Django. I have experience in building applications using these frameworks and implementing best practices."]
+      "tag": "work_experience_varsitygenie",
+      "patterns": [
+        "What is Thabiso's work experience at VarsityGenie?",
+        "Tell me about Thabiso's role at VarsityGenie.",
+        "What did Thabiso do at VarsityGenie?",
+        "Can you describe Thabiso's experience at VarsityGenie?",
+        "What responsibilities did Thabiso have at VarsityGenie?"
+      ],
+      "responses": [
+        "At VarsityGenie, Thabiso served as the Personal Branding Manager, where he was responsible for enhancing the brand presence of the committee. This role included managing social media accounts, organizing events, and collaborating with team members to develop strategies that aligned with industry standards. Thabiso also played a key role in creating content to engage the student community."
+      ]
     },
     {
-      "tag": "career_guidance",
-      "patterns": ["What career guidance do you offer?", "How can you help with career choices?", "Tell me about your career guidance services"],
-      "responses": ["I provide career guidance through various platforms, helping individuals explore career options and educational pathways that align with their interests and skills."]
+      "tag": "networking_collaboration",
+      "patterns": ["Is Thabiso open to networking?", "Can Thabiso collaborate on projects?", "How can I connect with Thabiso?"],
+      "responses": ["Thabiso is open to networking and collaboration opportunities. You can connect with him through his LinkedIn profile or GitHub."]
     },
     {
-      "tag": "lecturer_consultation",
-      "patterns": ["How do I book a consultation with a lecturer?", "Tell me about your lecturer consultation system", "What is the process for lecturer booking?"],
-      "responses": ["I have developed a lecturer consultation booking system that allows students to easily schedule appointments with their lecturers. For more details, please visit our booking page."]
+      "tag": "testimonials",
+      "patterns": ["What do others say about Thabiso?", "Can you share testimonials for Thabiso?", "What do colleagues say about Thabiso's work?"],
+      "responses": ["Colleagues have praised Thabiso for his strong work ethic, innovative thinking, and ability to work well in teams. He is known for delivering high-quality work on time."]
+    },
+    {
+      "tag": "community_involvement",
+      "patterns": ["Is Thabiso involved in any community service?", "What community activities does Thabiso participate in?", "Tell me about Thabiso's volunteering efforts."],
+      "responses": ["Thabiso is actively involved in community service, mentoring students interested in tech, and participating in local coding boot camps and workshops."]
+    },
+    {
+      "tag": "programming_languages",
+      "patterns": ["What programming languages does Thabiso know?", "Tell me about Thabiso's skills in programming languages.", "Which languages is Thabiso proficient in?"],
+      "responses": ["Thabiso is proficient in several programming languages, including C#, Python, and JavaScript. He uses these languages in various projects and applications."]
+    },
+    {
+      "tag": "development_tools",
+      "patterns": ["What development tools does Thabiso prefer?", "Tell me about Thabiso's favorite programming tools.", "Which IDEs does Thabiso use?"],
+      "responses": ["Thabiso prefers using Visual Studio, Visual Studio Code, and PyCharm for development. He also utilizes tools like GitHub for version control and collaboration."]
+    },
+    {
+      "tag": "personal_development",
+      "patterns": ["How does Thabiso continue to learn?", "What does Thabiso do for personal development?", "Tell me about Thabiso's learning journey."],
+      "responses": ["Thabiso is committed to continuous learning. He regularly takes online courses, reads industry-related books, and attends tech conferences to enhance his skills."]
     }
+  
   ]
 }
