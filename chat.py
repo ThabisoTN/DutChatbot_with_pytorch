@@ -4,6 +4,8 @@ import torch
 from model import NeuralNet
 from flask import Flask, render_template, request, jsonify
 from nltk_utils import bag_Of_words, tokenize
+import nltk
+nltk.data.path.append('./nltk_data')  # Adjust the path if necessary
 
 
 app = Flask(__name__)
