@@ -6,6 +6,22 @@ from flask import Flask, render_template, request, jsonify
 from nltk_utils import bag_Of_words, tokenize
 
 
+import os
+import nltk
+
+# Check if punkt is already downloaded
+if not os.path.exists(os.path.join(nltk.data.path[0], 'tokenizers', 'punkt')):
+    nltk.download('punkt', download_dir=nltk.data.path[0])
+
+# Now import your other modules
+import random
+import json
+import torch
+from model import NeuralNet
+from flask import Flask, render_template, request, jsonify
+from nltk_utils import bag_Of_words, tokenize
+
+
 app = Flask(__name__)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
