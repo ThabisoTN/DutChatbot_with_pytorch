@@ -15,180 +15,137 @@
         "Howdy"
       ],
       "responses": [
-        "Hello! I am ChatBotThabiso, here to assist you with everything you need to know about Thabiso. How can I assist you today?",
-        "Hi there! I'm ChatBotThabiso. Feel free to ask me anything about Thabiso!",
-        "Good day! I'm here to help you learn more about Thabiso. What would you like to know?",
-        "Hey! I'm ChatBotThabiso, ready to provide information about Thabiso. What can I help you with today?"
+        "Hello! I am ChatBotThabiso, here to assist you with DUT-related queries. How can I help you today?",
+        "Hi there! I'm your DUT assistant. Feel free to ask any questions about Durban University of Technology.",
+        "Good day! How can I assist you with DUT information?",
+        "Hey! I’m here to provide answers to your DUT-related queries. What can I help you with?"
       ]
     },
-
     {
-      "tag": "summary",
+      "tag": "campus_location",
       "patterns": [
-        "Tell me about Thabiso",
-        "What is Thabiso's background?",
-        "Can you provide a summary of Thabiso?",
-        "Give me an overview of Thabiso",
-        "Who is Thabiso?",
-        "What does Thabiso do?",
-        "Describe Thabiso",
-        "What are Thabiso's qualifications?",
-        "Tell me Thabiso's story",
-        "What is Thabiso known for?"
+        "Where is DUT located?",
+        "What is the address of DUT?",
+        "Can you give me directions to DUT?",
+        "Where can I find the DUT campus?",
+        "What are the locations of DUT campuses?"
       ],
       "responses": [
-        "Thabiso Ngubane is a passionate software developer with experience in C# and Python, skilled in building applications using ASP.NET Core, Flask, and various SQL databases. Thabiso holds an Advanced Diploma in ICT: Application Development and has worked on several notable projects, including a Career Guidance Application and a DUT Lecturer Consultation Booking system.",
-        "Thabiso is a software developer with a strong foundation in programming languages such as C# and Python. He has developed applications that assist users with various academic and career-related queries, showcasing his dedication to leveraging technology for problem-solving.",
-        "As a software developer, Thabiso focuses on creating user-friendly applications. With experience in ASP.NET Core and Flask, he is well-versed in full-stack development and integrates AI technologies to enhance user interactions.",
-        "Thabiso is known for his innovative projects, including the School Student Tracking System and the Lawn Mowing Booking System. He is committed to continuous learning and improving his skills in software development."
+        "DUT has multiple campuses, including Steve Biko Campus in Durban and Indumiso Campus in Pietermaritzburg. Let me know which campus details you need!",
+        "You can find the main Durban campus at 41 Steve Biko Road, Durban. Would you like directions?"
       ]
-    }, 
+    },
     {
-      "tag": "personal_information",
+      "tag": "admissions",
       "patterns": [
-        "What is Thabiso's GitHub account?",
-        "Where can I find Thabiso's GitHub profile?",
-        "What is Thabiso's LinkedIn profile?",
-        "Can you provide Thabiso's personal website?",
-        "Where is Thabiso's professional website located?",
-        "What are Thabiso's social media links?",
-        "How can I contact Thabiso?",
-        "Does Thabiso have a website?",
-        "What is Thabiso's email address?",
-        "Where can I find Thabiso online?"
+        "How do I apply to DUT?",
+        "What is the application process for DUT?",
+        "Can I apply online?",
+        "Where do I get the application form for DUT?",
+        "What are the requirements for admission at DUT?"
       ],
       "responses": [
-        "Thabiso's GitHub profile can be found at [https://github.com/ThabisoTN](https://github.com/ThabisoTN).",
-        "You can connect with Thabiso on LinkedIn: [https://www.linkedin.com/in/thabiso-ngubane-164301286](https://www.linkedin.com/in/thabiso-ngubane-164301286).",
-        "Thabiso's personal website is located at [https://thabisongubanee.onrender.com/](https://thabisongubanee.onrender.com/).",
-        "For any inquiries, you can contact Thabiso via email at thabisongubanee@gmail.com. or call on 076 818 3306",
-        "Thabiso is active on GitHub and LinkedIn, where you can follow his projects and professional journey."
+        "You can apply to DUT online by visiting the DUT Admissions portal. Ensure you meet the requirements for your chosen program and submit all necessary documents.",
+        "The application process includes filling out the form online, uploading your documents, and paying the application fee. Visit the official DUT website for details."
       ]
-    }, {
-      "tag": "education_background",
+    },
+    {
+      "tag": "courses_offered",
       "patterns": [
-        "What is Thabiso's educational background?",
-        "Where did Thabiso study?",
-        "What degrees does Thabiso have?",
-        "Can you tell me about Thabiso's education?",
-        "What qualifications does Thabiso hold?",
-        "Where did Thabiso get his diploma?",
-        "What subjects did Thabiso study in college?",
-        "Tell me about Thabiso's academic achievements."
+        "What courses does DUT offer?",
+        "Can you list programs at DUT?",
+        "Does DUT have engineering programs?",
+        "What courses are available in business?",
+        "Does DUT offer short courses?"
       ],
       "responses": [
-        "Thabiso holds an Advanced Diploma in ICT: Application Development and a Diploma in Application Development from Durban University of Technology.",
-        "Thabiso studied at Durban University of Technology, where he earned an Advanced Diploma in ICT: Application Development and a Diploma in Application Development.",
-        "Thabiso's educational background includes an Advanced Diploma in ICT and a Diploma in Application Development, focusing on programming languages and software development."
+        "DUT offers a variety of courses in Engineering, ICT, Business, Health Sciences, and more. Visit the DUT website for a full list.",
+        "Yes, DUT has programs in Engineering, Business Administration, Arts, and many more fields. Short courses are also available in areas like Project Management and Graphic Design."
       ]
-    }, 
-
+    },
     {
-      "tag": "skills",
+      "tag": "student_portal",
       "patterns": [
-        "What skills does Thabiso have?",
-        "Tell me about Thabiso's skills.",
-        "What are Thabiso's technical skills?",
-        "Can you list Thabiso's skills?",
-        "What programming languages does Thabiso know?",
-        "What technologies is Thabiso proficient in?",
-        "Describe Thabiso's skill set."
+        "How do I access the student portal?",
+        "What is the link to the DUT student portal?",
+        "Can you help me log into the portal?",
+        "I forgot my portal password",
+        "Where can I find my results online?"
       ],
       "responses": [
-        "Thabiso is skilled in the following areas: \n- Programming languages: C#, Python, and JavaScript \n- Frameworks: ASP.NET Core, MVC, Flask, and Django \n- Database management: SQL and SQLAlchemy \n- AI technologies: Experience with integrating AI using OpenAI's APIs \n- Web development: Proficient in HTML and CSS \n- DevOps: Experience with Git and GitHub for version control.",
-        "Thabiso's skill set includes:\n- C# and Python programming \n- ASP.NET Core and Flask frameworks \n- SQL databases for data management \n- HTML, CSS, and JavaScript for front-end development \n- Familiarity with AI technologies and tools like OpenAI.",
-        "Thabiso is proficient in:\n- C# and Python for backend development \n- ASP.NET Core, MVC, and Flask for building web applications \n- SQL for database management and integration \n- HTML, CSS, and JavaScript for web design and interactivity."
+        "You can access the DUT student portal at [https://www.dut.ac.za/student_portal](https://www.dut.ac.za/student_portal). If you forgot your password, click the 'Forgot Password' option.",
+        "The student portal provides access to your results, registration, and other academic information. Visit the link and log in with your student credentials."
       ]
     },
     {
-      "tag": "projects",
+      "tag": "fees",
       "patterns": [
-        "What projects has Thabiso worked on?",
-        "Tell me about Thabiso's projects.",
-        "What are Thabiso's notable projects?",
-        "Can you list Thabiso's projects?",
-        "What applications has Thabiso developed?",
-        "Describe the projects Thabiso has completed.",
-        "What is Thabiso's project experience?"
+        "What are the tuition fees at DUT?",
+        "How much does it cost to study at DUT?",
+        "What is the application fee?",
+        "Can I pay my fees online?",
+        "Where do I find banking details for DUT?"
       ],
       "responses": [
-        "Thabiso has worked on several projects, including:\n1. **Career Guidance Application** - Helps high school students navigate potential career paths based on their subjects and interests.\n2. **DUT Lecturer Consultation Booking** - Allows students to book consultations with lecturers based on their availability.\n3. **School Student Tracking System** - Enables schools to register students and track attendance using QR codes.\n4. **Lawn Mowing Booking System** - Allows community members to schedule lawn mowing services.\n5. **ChatBot** - Developed to assist users with academic queries related to DUT.",
-        "Thabiso's notable projects include:\n- **Career Guidance Application**: Designed for high school students to explore career options.\n- **DUT Lecturer Consultation Booking**: Streamlines the appointment process for students and lecturers.\n- **School Student Tracking System**: Tracks student attendance with QR code identification.\n- **Lawn Mowing Booking System**: Provides scheduling for lawn mowing services.\n- **ChatBot**: Aids users with academic questions related to DUT.",
-        "Some projects Thabiso has developed are:\n1. **Career Guidance Application**\n2. **DUT Lecturer Consultation Booking**\n3. **School Student Tracking System**\n4. **Lawn Mowing Booking System**\n5. **ChatBot**\nYou can ask for more details about any specific project."
+        "DUT tuition fees vary by program. Visit the fees section on the DUT website for a detailed breakdown.",
+        "You can pay your fees online through the student portal or via EFT. For banking details, please visit [https://www.dut.ac.za/fees](https://www.dut.ac.za/fees)."
       ]
     },
     {
-      "tag": "extracurricular_activities",
+      "tag": "contact",
       "patterns": [
-        "What extracurricular activities is Thabiso involved in?",
-        "Tell me about Thabiso's extracurricular activities.",
-        "What clubs or societies does Thabiso participate in?",
-        "Can you list Thabiso's extracurricular activities?",
-        "What activities does Thabiso do outside of academics?",
-        "Describe Thabiso's involvement in extracurricular activities."
+        "What is DUT's phone number?",
+        "How can I contact DUT?",
+        "Can I email DUT?",
+        "Who do I talk to for more information?",
+        "What are DUT's contact details?"
       ],
       "responses": [
-        "Thabiso is actively involved in various extracurricular activities, including participating in tech clubs, attending workshops and seminars related to software development, and engaging in community service projects.",
-        "Thabiso participates in several extracurricular activities such as coding competitions, hackathons, and volunteering at local community events to promote technology education.",
-        "Some of Thabiso's extracurricular activities include:\n- Involvement in the university's tech society.\n- Participation in hackathons and coding challenges.\n- Volunteering for community service projects focused on technology education."
+        "You can contact DUT at +27 31 373 2000 or email info@dut.ac.za. Visit the website for department-specific contact details.",
+        "For general inquiries, call DUT at +27 31 373 2000. You can also email admissions@dut.ac.za for application-related queries."
       ]
-    }, 
+    },
     {
-      "tag": "work_experience_lead_hr",
+      "tag": "campus_facilities",
       "patterns": [
-        "What is Thabiso's work experience at Lead HR?",
-        "Tell me about Thabiso's role at Lead HR.",
-        "What did Thabiso do at Lead HR?",
-        "Can you describe Thabiso's experience at Lead HR?",
-        "What responsibilities did Thabiso have at Lead HR?"
+        "Does DUT have a library?",
+        "What facilities are available at DUT?",
+        "Is there a gym on campus?",
+        "Does DUT provide Wi-Fi?",
+        "What student resources are there at DUT?"
       ],
       "responses": [
-        "At Lead HR, Thabiso worked as a Software Developer Intern, focusing on developing and maintaining web applications. This role involved collaborating with cross-functional teams to gather requirements, implement features, and ensure the software met user needs. Thabiso also gained experience in Agile methodologies and participated in code reviews."
+        "DUT offers facilities like libraries, computer labs, Wi-Fi, and a student gym. Let me know if you need specific details about any facility.",
+        "Yes, DUT provides access to libraries, student counseling, and other resources. Visit the DUT website for more information."
       ]
     },
     {
-      "tag": "work_experience_varsitygenie",
+      "tag": "graduation",
       "patterns": [
-        "What is Thabiso's work experience at VarsityGenie?",
-        "Tell me about Thabiso's role at VarsityGenie.",
-        "What did Thabiso do at VarsityGenie?",
-        "Can you describe Thabiso's experience at VarsityGenie?",
-        "What responsibilities did Thabiso have at VarsityGenie?"
+        "When is the graduation ceremony?",
+        "How do I apply for graduation?",
+        "What are the requirements for graduation?",
+        "Can I hire a graduation gown at DUT?",
+        "When is the next graduation?"
       ],
       "responses": [
-        "At VarsityGenie, Thabiso served as the Personal Branding Manager, where he was responsible for enhancing the brand presence of the committee. This role included managing social media accounts, organizing events, and collaborating with team members to develop strategies that aligned with industry standards. Thabiso also played a key role in creating content to engage the student community."
+        "Graduation ceremonies are held annually. Check the DUT Graduation page for specific dates and details on how to apply.",
+        "You can apply for graduation through the student portal. For gowns, visit the gown rental service on campus or contact your faculty."
       ]
     },
     {
-      "tag": "networking_collaboration",
-      "patterns": ["Is Thabiso open to networking?", "Can Thabiso collaborate on projects?", "How can I connect with Thabiso?"],
-      "responses": ["Thabiso is open to networking and collaboration opportunities. You can connect with him through his LinkedIn profile or GitHub."]
-    },
-    {
-      "tag": "testimonials",
-      "patterns": ["What do others say about Thabiso?", "Can you share testimonials for Thabiso?", "What do colleagues say about Thabiso's work?"],
-      "responses": ["Colleagues have praised Thabiso for his strong work ethic, innovative thinking, and ability to work well in teams. He is known for delivering high-quality work on time."]
-    },
-    {
-      "tag": "community_involvement",
-      "patterns": ["Is Thabiso involved in any community service?", "What community activities does Thabiso participate in?", "Tell me about Thabiso's volunteering efforts."],
-      "responses": ["Thabiso is actively involved in community service, mentoring students interested in tech, and participating in local coding boot camps and workshops."]
-    },
-    {
-      "tag": "programming_languages",
-      "patterns": ["What programming languages does Thabiso know?", "Tell me about Thabiso's skills in programming languages.", "Which languages is Thabiso proficient in?"],
-      "responses": ["Thabiso is proficient in several programming languages, including C#, Python, and JavaScript. He uses these languages in various projects and applications."]
-    },
-    {
-      "tag": "development_tools",
-      "patterns": ["What development tools does Thabiso prefer?", "Tell me about Thabiso's favorite programming tools.", "Which IDEs does Thabiso use?"],
-      "responses": ["Thabiso prefers using Visual Studio, Visual Studio Code, and PyCharm for development. He also utilizes tools like GitHub for version control and collaboration."]
-    },
-    {
-      "tag": "personal_development",
-      "patterns": ["How does Thabiso continue to learn?", "What does Thabiso do for personal development?", "Tell me about Thabiso's learning journey."],
-      "responses": ["Thabiso is committed to continuous learning. He regularly takes online courses, reads industry-related books, and attends tech conferences to enhance his skills."]
+      "tag": "emergency",
+      "patterns": [
+        "What is the campus emergency number?",
+        "Who do I call for help on campus?",
+        "Does DUT have campus security?",
+        "How do I report an emergency?",
+        "Is there a medical clinic on campus?"
+      ],
+      "responses": [
+        "For emergencies, call DUT Security at +27 31 373 2233. The campus clinic is available for medical assistance during office hours.",
+        "In case of an emergency, contact DUT security or your faculty's emergency contact person."
+      ]
     }
-  
   ]
 }
