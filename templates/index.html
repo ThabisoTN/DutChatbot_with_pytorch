@@ -3,60 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatbotThabiso</title>
+    <title>Chatbot Thabiso</title>
     <style>
+        /* General Body Styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e9ecef;
+            background-color: #f0f4f8;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
+        /* Header Styling */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Chat Section Container */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
         .chat-container {
             width: 500px;
-            margin: 50px auto;
             border: 1px solid #ccc;
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
+
+        /* Chat Area Styling */
         .chat-box {
             height: 400px;
             overflow-y: auto;
-            border-bottom: 1px solid #ccc;
-            padding: 15px;
-            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
             background-color: #f9f9f9;
+            margin-bottom: 15px;
         }
+
         .message {
             margin: 10px 0;
             padding: 10px 15px;
             border-radius: 15px;
-            max-width: 75%;
+            max-width: 70%;
             display: inline-block;
             word-wrap: break-word;
         }
+
         .user-message {
             background-color: #007bff;
             color: white;
-            text-align: right;
             float: right;
             clear: both;
         }
+
         .bot-message {
-            background-color: #f1f8e9;
+            background-color: #e1f5fe;
             color: #333;
-            text-align: left;
             float: left;
             clear: both;
         }
+
+        /* Input and Button Styling */
         input[type="text"] {
-            width: 85%;
+            width: calc(100% - 80px);
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            margin-top: 5px;
+            outline: none;
         }
+
         button {
             padding: 10px 15px;
             border: none;
@@ -64,77 +95,91 @@
             color: white;
             border-radius: 5px;
             cursor: pointer;
-            margin-left: 5px;
+            margin-left: 10px;
         }
+
         button:hover {
             background-color: #0056b3;
         }
+
+        /* Footer Styling */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Scrollbar Styling */
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-thumb {
             background-color: #007bff;
             border-radius: 10px;
         }
-        .clear {
-            clear: both;
-        }
     </style>
 </head>
 <body>
+    <header>
+        Chatbot Thabiso - Your Assistant for DUT Queries
+    </header>
 
-    <div class="chat-container">
-        <div class="intro">
-            <p>Welcome to the ChatbotThabiso! Am here to help you with any Query you might have regradiung DUT!!!</p>
+    <main>
+        <div class="chat-container">
+            <div class="intro">
+                <p><strong>Welcome to Chatbot Thabiso!</strong></p>
+                <p>I am here to assist you with any queries you might have regarding DUT!</p>
+            </div>
+            <div class="chat-box" id="chat-box"></div>
+            <div>
+                <input type="text" id="user-input" placeholder="Type your message here..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
         </div>
-        <div class="chat-box" id="chat-box"></div>
-        <input type="text" id="user-input" placeholder="Type your message here..." />
-        <button onclick="sendMessage()">Send</button>
-    </div>
+    </main>
 
-<script>
-    function sendMessage() {
-        const userInput = document.getElementById("user-input").value;
-        if (userInput.trim() === "") {
-            return;
-        }
+    <footer>
+        &copy; 2024 Chatbot Thabiso. All Rights Reserved. | <a href="#">Privacy Policy</a>
+    </footer>
 
-        // Add user message to chat box
-        const chatBox = document.getElementById("chat-box");
-        const userMessage = document.createElement("div");
-        userMessage.classList.add("message", "user-message");
-        userMessage.innerText = userInput;
-        chatBox.appendChild(userMessage);
-        chatBox.appendChild(document.createElement("div")).classList.add("clear");
+    <script>
+        function sendMessage() {
+            const userInput = document.getElementById("user-input").value;
+            if (userInput.trim() === "") {
+                return;
+            }
 
-        // Clear input
-        document.getElementById("user-input").value = "";
+            const chatBox = document.getElementById("chat-box");
 
-        // Scroll chat to bottom
-        chatBox.scrollTop = chatBox.scrollHeight;
+            // Add user message to chat box
+            const userMessage = document.createElement("div");
+            userMessage.classList.add("message", "user-message");
+            userMessage.innerText = userInput;
+            chatBox.appendChild(userMessage);
 
-        // Send the message to the backend
-        fetch("/get-response", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ message: userInput }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Add bot response to chat box
-            const botMessage = document.createElement("div");
-            botMessage.classList.add("message", "bot-message");
-            botMessage.innerText = data.response;
-            chatBox.appendChild(botMessage);
-            chatBox.appendChild(document.createElement("div")).classList.add("clear");
+            // Clear input
+            document.getElementById("user-input").value = "";
 
-            // Scroll chat to bottom
+            // Scroll to the bottom of the chat box
             chatBox.scrollTop = chatBox.scrollHeight;
-        });
-    }
-</script>
 
+            // Simulate bot response
+            setTimeout(() => {
+                const botMessage = document.createElement("div");
+                botMessage.classList.add("message", "bot-message");
+                botMessage.innerText = "I'm here to help! What would you like to know?";
+                chatBox.appendChild(botMessage);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }, 1000);
+        }
+    </script>
 </body>
 </html>
